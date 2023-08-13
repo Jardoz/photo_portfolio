@@ -38,12 +38,13 @@ export const Carousel = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-        {data.map((slide) => {
+        {data.map((slide, i) => {
           const { src, title } = slide;
           return (
-            <div className="relative md:h-[550px] h-96 group flex items-center justify-center overflow-hidden">
+            <div key={i} className="relative md:h-[550px] h-96 group flex items-center justify-center overflow-hidden">
               <img
                 src={src}
+                alt={`Servises image ${i+1}`}
                 className="absolute inset-0 object-cover w-full h-full md:group-hover:opacity-60"
               />
               {/* Hidden content for desktop*/}

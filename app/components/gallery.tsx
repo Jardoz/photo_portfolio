@@ -35,10 +35,10 @@ export const Gallery = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {images.map((_, i) => {
             return (
-              <div className="grid gap-2">
-                {images[i].map(({ src, alt }) => {
+              <div key={'section' + i} className="grid gap-2">
+                {images[i].map(({ src, alt }, index) => {
                   return (
-                    <div>
+                    <div key={'item'+ index}>
                       <img className="h-auto max-w-full " src={src} alt={alt} />
                     </div>
                   );

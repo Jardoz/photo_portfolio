@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image";
+
 import { SocialLink } from "./socialLink";
 
 export const About = () => {
@@ -49,7 +51,7 @@ export const About = () => {
                 className="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-full"
                 onClick={() => (window.location.href = "#contacts")}
               >
-                Зв'язатися
+                {`Зв'язатися`}
               </button>
             </div>
 
@@ -129,10 +131,12 @@ export const About = () => {
         </div>
 
         <div className="w-full lg:w-2/5 lg:bg-[url('/background2.jpg')] lg:pb-80 lg:pt-32 flex items-start justify-center">
-          <img
+          <Image
             src="/avatar.png"
             className="rounded-full shadow-2xl hidden lg:block"
             alt="Profile Avatar"
+            width={200}
+            height={200}
           />
         </div>
       </div>

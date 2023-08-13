@@ -42,7 +42,7 @@ export const Pricing = () => {
                   className="leading-8 mb-10 text-lg font-light"
                 >
                   <ul>
-                    <li>1 год фотоз'йомка</li>
+                    <li>{`1 год фотоз'йомка`}</li>
                     <li>1,5 год фотостудія</li>
                     <li>Асистент</li>
                     <li>Повний супровід по позах</li>
@@ -86,7 +86,7 @@ export const Pricing = () => {
                   className="leading-8 mb-10 text-lg font-light"
                 >
                   <ul>
-                    <li>1 год фотоз'йомка</li>
+                    <li>{`1 год фотоз'йомка`}</li>
                     <li>1,5 год фотостудія</li>
                     <li>Асистент</li>
                     <li>Повний супровід по позах</li>
@@ -128,7 +128,7 @@ export const Pricing = () => {
                   className="leading-8 mb-10 text-lg font-light"
                 >
                   <ul>
-                    <li>5 год фотоз'йомка</li>
+                    <li>{`5 год фотоз'йомк`}а</li>
                     <li>3 год фотостудія</li>
                     <li>Асистент</li>
                     <li>Повний супровід</li>
